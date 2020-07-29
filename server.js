@@ -26,7 +26,7 @@ app.post("/login", (req, res) => {
     });
 });
 
-app.post("/symptoms", (req, res) => {
+app.get("/symptoms", (req, res) => {
   request({
     method: "GET",
     uri: `${ApiMedicHost}/symptoms`,
@@ -42,7 +42,7 @@ app.post("/symptoms", (req, res) => {
     });
 });
 
-app.post("/diagnosis", (req, res) => {
+app.get("/diagnosis", (req, res) => {
   request({
     method: "GET",
     uri: `${ApiMedicHost}/diagnosis`,
